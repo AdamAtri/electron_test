@@ -14,12 +14,12 @@ function getInstallerConfig () {
   const outPath = path.join(rootPath, 'release-builds')
 
   return Promise.resolve({
-    appDirectory: path.join(outPath, 'test-electron-app-win32-ia32/'),
+    appDirectory: path.join(outPath, 'hotlinks-29-win32-ia32/'),
     authors: 'Adam@Atricoware',
     noMsi: true,
     outputDirectory: path.join(outPath, 'windows-installer'),
-    exe: 'test-electron-app.exe',
-    setupExe: 'TestElectronApp.exe',
+    exe: 'hotlinks-29.exe',
+    setupExe: 'HotLinks29.exe',
     setupIcon: path.join(rootPath, 'assets', 'icons', 'win', 'logo.ico')
   })
 }

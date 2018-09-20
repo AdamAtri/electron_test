@@ -20,6 +20,6 @@ function getInstallerConfig () {
     outputDirectory: path.join(outPath, 'windows-installer'),
     exe: 'test-electron-app.exe',
     setupExe: 'TestElectronApp.exe',
-    setupIcon: path.join(rootPath, 'assets', 'icons', 'win', 'icon.ico')
+    setupIcon: path.join(rootPath, 'assets', 'icons', 'win', 'logo.ico')
   })
 }

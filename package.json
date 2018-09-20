@@ -14,7 +14,7 @@
   },
   "scripts": {
     "package-mac": "electron-packager . test-electron-app --overwrite --asar=true --platform=darwin --arch=x64  --prune=true --out=release-builds",
-    "package-win": "electron-packager . test-electron-app --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/logo.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Electron Tutorial App\"",
+    "package-win": "electron-packager . test-electron-app --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/logo.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Test Electron App\"",
     "package-linux": "electron-packager . test-electron-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/Icon-1024.png --prune=true --out=release-builds",
     "create-installer-mac": "electron-installer-dmg ./release-builds/Electron\\ tutorial\\ app-darwin-x64/Electron\\ tutorial\\ app.app test-electron-app --out=release-builds --overwrite --icon=assets/icons/mac/icon.icns",
     "create-installer-win": "node installers/windows/createinstaller.js",

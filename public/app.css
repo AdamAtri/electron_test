@@ -1,34 +1,3 @@
-@font-face {
-  font-family: 'Yahoo';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Yahoo Regular"), local("Yahoo-Regular"), url(Yahoo.ttf) format("truetype");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-
-* {
-  padding: 0;
-  margin: 0; }
-
-body {
-  font-family: monospace;
-  font-size: 20px;
-  background-color: #111;
-  color: #DEE; }
-
-#app-mount {
-  width: 100%;
-  height: 100vh; }
-
-#temp-header {
-  text-align: center; }
-
-#temp-img {
-  display: block;
-  width: 60%;
-  height: auto;
-  margin: 0 auto;
-  border-radius: 5%;
-  filter: drop-shadow(10px 10px 20px #222); }
 @keyframes dropIn {
   from {
     top: -100%; }
@@ -119,28 +88,37 @@ dialog {
         background: rgba(30, 30, 30, 0.3); }
       dialog .action-container .action-button.active {
         background: #7c27b0; }
-/* PayoutTable style */
-#payout-table {
-  padding-right: 10px;
-  font-size: .70em; }
-  #payout-table #table-header {
-    font-size: 20px; }
-  #payout-table table {
-    width: 100%;
-    border-collapse: collapse; }
-  #payout-table th {
-    font-family: Yahoo;
-    font-size: 1em;
-    letter-spacing: .12em; }
-  #payout-table td, #payout-table th {
-    border: 4px solid transparent;
-    text-align: left; }
-    #payout-table td:nth-child(2), #payout-table th:nth-child(2) {
-      text-align: right; }
-  #payout-table td:nth-child(1) {
-    padding-left: 2px; }
-  #payout-table .winner {
-    background-color: rgba(25, 150, 190, 0.8); }
+@font-face {
+  font-family: 'Yahoo';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Yahoo Regular"), local("Yahoo-Regular"), url(Yahoo.ttf) format("truetype");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: monospace;
+  font-size: 20px;
+  background-color: #111;
+  color: #DEE; }
+
+#app-mount {
+  width: 100%;
+  height: 100vh; }
+
+#temp-header {
+  text-align: center; }
+
+#temp-img {
+  display: block;
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 5%;
+  filter: drop-shadow(10px 10px 20px #222); }
 /* RootView styles */
 #root-view {
   display: grid;
@@ -295,6 +273,28 @@ dialog {
 
 .left {
   align-self: flex-start; }
+/* PayoutTable style */
+#payout-table {
+  padding-right: 10px;
+  font-size: .70em; }
+  #payout-table #table-header {
+    font-size: 20px; }
+  #payout-table table {
+    width: 100%;
+    border-collapse: collapse; }
+  #payout-table th {
+    font-family: Yahoo;
+    font-size: 1em;
+    letter-spacing: .12em; }
+  #payout-table td, #payout-table th {
+    border: 4px solid transparent;
+    text-align: left; }
+    #payout-table td:nth-child(2), #payout-table th:nth-child(2) {
+      text-align: right; }
+  #payout-table td:nth-child(1) {
+    padding-left: 2px; }
+  #payout-table .winner {
+    background-color: rgba(25, 150, 190, 0.8); }
 #community-cards {
   width: 100%;
   height: 100%;
